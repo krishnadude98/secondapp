@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".League_Activity">
+    tools:context=".SkillActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView4"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/desiredleaguebg"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/beginnerballerbg"
         android:contentDescription="@string/background_image" />
 
     <ImageView
@@ -25,87 +25,77 @@
         android:layout_width="101dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/app_logo"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/swooshlogo"
-        android:contentDescription="@string/app_logo" />
+        app:srcCompat="@drawable/swooshlogo" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="138dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/desired_league"
+        android:id="@+id/textView"
+        android:layout_width="81dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/i_am_a"
         android:textColor="@android:color/white"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        android:textStyle="bold"/>
+        app:layout_constraintVertical_bias="0.033" />
 
     <LinearLayout
-        android:layout_width="240dp"
-        android:layout_height="162dp"
+        android:layout_width="377dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
-            android:layout_width="match_parent"
+            android:id="@+id/toggleButton3"
+            android:layout_width="164dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16sp"
             android:background="@drawable/swoosh_toogle"
-            android:text="@string/mens"
+            android:text="@string/beginner"
             android:textColor="@android:color/white"
-            android:textOff="@string/mens"
-            android:textOn="@string/mens"
-            android:textStyle="bold"/>
+            android:textOff="@string/beginner"
+            android:textOn="@string/beginner" />
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
-            android:layout_width="match_parent"
+            android:id="@+id/toggleButton"
+            android:layout_width="176dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
             android:background="@drawable/swoosh_toogle"
-            android:text="@string/womens"
+            android:text="@string/pro"
             android:textColor="@android:color/white"
-            android:textOff="@string/womens"
-            android:textOn="@string/womens"
-            android:textStyle="bold"/>
-
-        <ToggleButton
-            android:id="@+id/toggleButton6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/swoosh_toogle"
-            android:text="@string/co_ed"
-            android:textColor="@android:color/white"
-            android:textOff="@string/co_ed"
-            android:textOn="@string/co_ed"
-            android:textStyle="bold"/>
-
+            android:textOff="@string/pro"
+            android:textOn="@string/pro" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/leagueNextBtn"
+        android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_key"
-        android:onClick="LeagueNextClicked"
-        android:text="@string/next"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/finish"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,4 +11,8 @@
     <string name="on_gooing_all_out">ON GOOING ALL OUT</string>
     <string name="find_a_team_in_your_city_and_doeagminate_the_leage">Find a Team in your City And Doeagminate The Leage</string>
     <string name="get_started">Get Started</string>
+    <string name="i_am_a">I Am A:</string>
+    <string name="beginner">Beginner</string>
+    <string name="pro">Pro</string>
+    <string name="finish">Finish</string>
 </resources>
